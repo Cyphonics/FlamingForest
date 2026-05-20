@@ -27,7 +27,15 @@ public class PlayerMovement : MonoBehaviour
         // go to the Rigidbody2D stored in our variable and change the linear velocty's X value to -1 (left)
         physicsBody.linearVelocityX = speed;
     }
-
-
+    public void MoveUp()
+    {
+        // go to the Rigidbody2D stored in our variable and change the linear velocty's X value to -1 (left)
+        physicsBody.linearVelocityY = speed;
+    }
+    public void MoveDown()
+    {
+        // go to the Rigidbody2D stored in our variable and change the linear velocty's X value to -1 (left)
+        physicsBody.linearVelocityY = -speed;
+    }
 
 }
